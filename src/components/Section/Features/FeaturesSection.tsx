@@ -1,6 +1,6 @@
 import * as React from "react";
-import NcImage from "../../shared/NcImage/NcImage";
-import Badge from "../../shared/Badge/Badge";
+import NcImage from "../../../shared/NcImage/NcImage";
+import Badge from "../../../shared/Badge/Badge";
 
 export interface SectionOurFeaturesProps {
   className?: string;
@@ -8,7 +8,7 @@ export interface SectionOurFeaturesProps {
   type?: "type1" | "type2";
 }
 
-const SectionOurFeatures: React.FC<SectionOurFeaturesProps> = ({
+const FeaturesSection: React.FC<SectionOurFeaturesProps> = ({
   className = "lg:py-14",
   rightImg = "/images/our-features.png",
   type = "type1",
@@ -18,7 +18,7 @@ const SectionOurFeatures: React.FC<SectionOurFeaturesProps> = ({
       className={`nc-SectionOurFeatures relative flex flex-col items-center ${
         type === "type1" ? "lg:flex-row" : "lg:flex-row-reverse"
       } ${className}`}
-      data-nc-id="SectionOurFeatures"
+      data-nc-id="FeaturesSection"
     >
       <div className="flex-grow">
         <NcImage src={rightImg} />
@@ -70,4 +70,4 @@ const SectionOurFeatures: React.FC<SectionOurFeaturesProps> = ({
   );
 };
 
-export default SectionOurFeatures;
+export default FeaturesSection;

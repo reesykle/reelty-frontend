@@ -1,6 +1,6 @@
-import __taxonomies from "./jsons/__taxonomies.json";
-import __stayTaxonomies from "./jsons/__stayTaxonomies.json";
-import __experiencesTaxonomies from "./jsons/__experiencesTaxonomies.json";
+import __taxonomies from "./json/__taxonomies.json";
+import __stayTaxonomies from "./json/__stayTaxonomies.json";
+import __experiencesTaxonomies from "./json/__experiencesTaxonomies.json";
 import { TaxonomyType } from "./types";
 
 const DEMO_CATEGORIES: TaxonomyType[] = __taxonomies.map((item) => ({

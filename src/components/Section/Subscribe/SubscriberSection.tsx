@@ -1,18 +1,18 @@
 import * as React from "react";
-import ButtonCircle from "../../shared/Button/ButtonCircle";
-import NcImage from "../../shared/NcImage/NcImage";
-import Badge from "../../shared/Badge/Badge";
-import Input from "../../shared/Input/Input";
+import ButtonCircle from "../../../shared/Button/ButtonCircle";
+import NcImage from "../../../shared/NcImage/NcImage";
+import Badge from "../../../shared/Badge/Badge";
+import Input from "../../../shared/Input/Input";
 
 export interface SectionSubscribe2Props {
   className?: string;
 }
 
-const SectionSubscribe2: React.FC<SectionSubscribe2Props> = ({ className = "" }) => {
+const SubscriberSection: React.FC<SectionSubscribe2Props> = ({ className = "" }) => {
   return (
     <div
       className={`nc-SectionSubscribe2 relative flex flex-col lg:flex-row lg:items-center ${className}`}
-      data-nc-id="SectionSubscribe2"
+      data-nc-id="SubscriberSection"
     >
       <div className="flex-shrink-0 mb-10 lg:mb-0 lg:mr-10 lg:w-2/5">
         <h2 className="font-semibold text-4xl">Join our newsletter 🎉</h2>
@@ -56,4 +56,4 @@ const SectionSubscribe2: React.FC<SectionSubscribe2Props> = ({ className = "" })
   );
 };
 
-export default SectionSubscribe2;
+export default SubscriberSection;

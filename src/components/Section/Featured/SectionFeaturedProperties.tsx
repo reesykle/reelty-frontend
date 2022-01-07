@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import * as React from 'react';
 import { DEMO_STAY_LISTINGS } from "../../../data/listings";
 import { StayDataType } from "../../../data/types";
 import ButtonPrimary from "../../../shared/Button/ButtonPrimary";
@@ -12,13 +12,13 @@ const DEMO_DATA: StayDataType[] = DEMO_STAY_LISTINGS.filter((_, i) => i < 8);
 export interface SectionGridFeaturePlacesProps {
     stayListings?: StayDataType[];
     gridClass?: string;
-    heading?: ReactNode;
-    subHeading?: ReactNode;
+    heading?: React.ReactNode;
+    subHeading?: React.ReactNode;
     headingIsCenter?: boolean;
     tabs?: string[];
 }
 
-const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
+const SectionGridFeaturePlaces: React.FC<SectionGridFeaturePlacesProps> = ({
                                                                          stayListings = DEMO_DATA,
                                                                          gridClass = "",
                                                                          heading = "Featured places to stay",

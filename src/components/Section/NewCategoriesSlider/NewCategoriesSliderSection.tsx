@@ -1,12 +1,12 @@
 import * as React from "react";
-import Heading from "../Heading/Heading";
+import Heading from "../../Heading/Heading";
 import Glide from "@glidejs/glide";
-import { TaxonomyType } from "../../data/types";
-import ncNanoId from "../../utils/ncNanoId";
-import CardCategory3 from "../Cards/CardCategory3";
-import CardCategory4 from "../Cards/CardCategory4";
-import NextPrev from "../../shared/NextPrev/NextPrev";
-import CardCategory5 from "../Cards/CardCategory5";
+import { TaxonomyType } from "../../../data/types";
+import ncNanoId from "../../../utils/ncNanoId";
+import CardCategory3 from "../../Cards/CardCategory3";
+import CardCategory4 from "../../Cards/CardCategory4";
+import NextPrev from "../../../shared/NextPrev/NextPrev";
+import CardCategory5 from "../../Cards/CardCategory5";
 
 export interface SectionSliderNewCategoriesProps {
   className?: string;
@@ -76,9 +76,9 @@ const DEMO_CATS: TaxonomyType[] = [
   },
 ];
 
-const SectionSliderNewCategories: React.FC<SectionSliderNewCategoriesProps> = ({
-  heading = "Heading of sections",
-  subHeading = "Descriptions for sections",
+const NewCategoriesSliderSection: React.FC<SectionSliderNewCategoriesProps> = ({
+  heading = "Top Cities",
+  subHeading = "Cities where users are investing the most.",
   className = "",
   itemClassName = "",
   categories = DEMO_CATS,
@@ -160,4 +160,4 @@ const SectionSliderNewCategories: React.FC<SectionSliderNewCategoriesProps> = ({
   );
 };
 
-export default SectionSliderNewCategories;
+export default NewCategoriesSliderSection;

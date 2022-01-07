@@ -20,8 +20,6 @@ const NavMobile: React.FC<NavMobileProps> = ({
   onClickClose,
 }) => {
   const _renderMenuChild = (item: NavItemType) => {
-    // @ts-ignore
-    // @ts-ignore
     return (
       <ul className="nav-mobile-sub-menu pl-6 pb-1 text-base">
         {item.children?.map((i, index) => (
@@ -42,6 +40,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
                   className="block flex-grow"
                   onClick={(e) => e.preventDefault()}
                 >
+                  {/* @ts-ignore */ }
                   <Disclosure.Button as="span" className="flex justify-end flex-grow">
                     <ChevronDownIcon
                       className="ml-2 h-4 w-4 text-neutral-500"
@@ -84,6 +83,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
               className="block flex-grow"
               onClick={(e) => e.preventDefault()}
             >
+              {/* @ts-ignore */ }
               <Disclosure.Button as="span" className="flex justify-end flex-grow">
                 <ChevronDownIcon
                   className="ml-2 h-4 w-4 text-neutral-500"

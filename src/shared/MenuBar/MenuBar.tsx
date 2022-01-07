@@ -16,6 +16,7 @@ const MenuBar: React.FC<MenuBarProps> = () => {
     const renderContent = () => {
         return (
             <Transition appear show={isVisable} as={React.Fragment}>
+                {/* @ts-ignore */ }
                 <Dialog
                     as="div"
                     className="fixed inset-0 z-50 overflow-y-auto"

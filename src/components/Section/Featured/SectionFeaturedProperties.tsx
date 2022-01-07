@@ -21,7 +21,7 @@ export interface SectionGridFeaturePlacesProps {
 const SectionGridFeaturePlaces: React.FC<SectionGridFeaturePlacesProps> = ({
                                                                          stayListings = DEMO_DATA,
                                                                          gridClass = "",
-                                                                         heading = "Featured places to stay",
+                                                                         heading = "New Properties",
                                                                          subHeading = "Popular places to stay that Chisfis recommends for you",
                                                                          headingIsCenter,
                                                                          tabs = ["New York", "Tokyo", "Paris", "London"],

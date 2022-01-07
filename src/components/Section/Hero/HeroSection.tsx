@@ -22,7 +22,7 @@ const HeroSection: React.FC<SectionHeroProps> = ({ className = "" }) => {
           <ButtonPrimary>Start Investing</ButtonPrimary>
         </div>
         <div className="flex-grow">
-          <img className="w-full" src={"/images/architecture-1.jpg"} alt="hero" />
+          <img className="w-full" src={"/images/architecture/architecture-3.jpg"} alt="hero" />
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import Header from "../../shared/Header/Header";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 class Layout extends React.Component {
     render() {
@@ -7,7 +8,7 @@ class Layout extends React.Component {
             <div className={"bg-white text-base dark:bg-neutral-900 text-neutral-900 dark:text-neutral-200"}>
                 <Header />
                 { this.props.children }
-                <h1>Footer</h1>
+                <Footer />
             </div>
         );
     }

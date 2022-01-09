@@ -1,7 +1,6 @@
 import * as React from "react";
 import HeroSection from "../components/Section/Hero/HeroSection";
 import NewCategoriesSliderSection from "../components/Section/NewCategoriesSlider/NewCategoriesSliderSection";
-import SubscriberSection from "../components/Section/Subscribe/SubscriberSection";
 import FeaturesSection from "../components/Section/Features/FeaturesSection";
 import SectionGridFeaturePlaces from "../components/Section/Featured/SectionFeaturedProperties";
 import SectionHowItWork from "../components/Section/HowItWorks/HowItWorksSection";
@@ -9,7 +8,8 @@ import BackgroundSection from "../components/Section/Background/BackgroundSectio
 import BgGlassmorphism from "../components/BgGlassmorphism/BgGlassmorphism";
 import { TaxonomyType } from "../data/types";
 import SectionGridCategoryBox from "../components/Section/GridCategoryBoxSection/GridCategoryBoxSection";
-import { Helmet } from "react-helmet";
+// @ts-ignore
+import { Helmet } from "react-helmet"
 
 const DEMO_CATS: TaxonomyType[] = [
     {
@@ -67,7 +67,6 @@ const DEMO_CATS: TaxonomyType[] = [
             "https://images.pexels.com/photos/3250613/pexels-photo-3250613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     },
 ];
-
 const DEMO_CATS_2: TaxonomyType[] = [
     {
         id: "1",
@@ -120,7 +119,7 @@ function PageHome() {
     return (
         <div className="nc-PageHome relative overflow-hidden">
             <Helmet>
-                <title>Chisfis || Booking React Template</title>
+                <title>Reelty | Decentralized Real Estate</title>
             </Helmet>
             {/* GLASSMOPHIN */}
             <BgGlassmorphism />
@@ -158,24 +157,7 @@ function PageHome() {
                 </div>
 
                 {/* SECTION */}
-                <SubscriberSection />
-
-                {/* SECTION */}
-                <div className="relative py-16">
-                    <BackgroundSection className="bg-orange-50 dark:bg-black dark:bg-opacity-20 " />
-                </div>
-
-                {/* SECTION */}
                 <SectionGridCategoryBox />
-
-
-                {/* SECTION 1 */}
-                <NewCategoriesSliderSection
-                    heading="Explore by types of stays"
-                    subHeading="Explore houses based on 10 types of stays"
-                    categoryCardType="card5"
-                    itemPerRow={5}
-                />
             </div>
         </div>
     );

@@ -19,7 +19,7 @@ const HeroSection: React.FC<SectionHeroProps> = ({ className = "" }) => {
           <span className="text-base md:text-lg text-neutral-500 dark:text-neutral-400">
             Join the movement and be part of the next disruptive thing in blockchain.
           </span>
-          <ButtonPrimary>Start Investing</ButtonPrimary>
+          <ButtonPrimary>Coming Soon</ButtonPrimary>
         </div>
         <div className="flex-grow">
           <img className="w-full" src={"/images/architecture/architecture-3.jpg"} alt="hero" />

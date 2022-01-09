@@ -3,13 +3,11 @@ import HeroSection from "../components/Section/Hero/HeroSection";
 import NewCategoriesSliderSection from "../components/Section/NewCategoriesSlider/NewCategoriesSliderSection";
 import FeaturesSection from "../components/Section/Features/FeaturesSection";
 import SectionGridFeaturePlaces from "../components/Section/Featured/SectionFeaturedProperties";
-import SectionHowItWork from "../components/Section/HowItWorks/HowItWorksSection";
-import BackgroundSection from "../components/Section/Background/BackgroundSection";
 import BgGlassmorphism from "../components/BgGlassmorphism/BgGlassmorphism";
 import { TaxonomyType } from "../data/types";
-import SectionGridCategoryBox from "../components/Section/GridCategoryBoxSection/GridCategoryBoxSection";
 // @ts-ignore
 import { Helmet } from "react-helmet"
+import PropertiesSection from "../components/Section/Properties/PropertiesSection";
 
 const DEMO_CATS: TaxonomyType[] = [
     {
@@ -131,33 +129,13 @@ function PageHome() {
                 {/* SECTION 1 */}
                 <NewCategoriesSliderSection categories={DEMO_CATS} />
 
+                {/* SECTION */}
+                <div className="relative py-16">
+                    <PropertiesSection />
+                </div>
+
                 {/* SECTION2 */}
                 <FeaturesSection />
-
-                {/* SECTION */}
-                <div className="relative py-16">
-                    <BackgroundSection />
-                    <SectionGridFeaturePlaces />
-                </div>
-
-                {/* SECTION */}
-                <SectionHowItWork />
-
-                {/* SECTION 1 */}
-                <div className="relative py-16">
-                    <BackgroundSection className="bg-orange-50 dark:bg-black dark:bg-opacity-20 " />
-                    <NewCategoriesSliderSection
-                        categories={DEMO_CATS_2}
-                        categoryCardType="card4"
-                        itemPerRow={4}
-                        heading="Suggestions for discovery"
-                        subHeading="Popular places to stay that Chisfis recommends for you"
-                        sliderStyle="style2"
-                    />
-                </div>
-
-                {/* SECTION */}
-                <SectionGridCategoryBox />
             </div>
         </div>
     );

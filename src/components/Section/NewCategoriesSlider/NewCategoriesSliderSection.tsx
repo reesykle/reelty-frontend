@@ -1,5 +1,6 @@
 import * as React from "react";
 import Heading from "../../Heading/Heading";
+// @ts-ignore
 import Glide from "@glidejs/glide";
 import { TaxonomyType } from "../../../data/types";
 import ncNanoId from "../../../utils/ncNanoId";

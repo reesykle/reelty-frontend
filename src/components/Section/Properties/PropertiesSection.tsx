@@ -19,9 +19,9 @@ const PropertiesSection: FC<SectionGridFilterCardProps> = ({
                                                                }) => {
     return (
         <div className={`nc-SectionGridFilterCard ${className}`} data-nc-id="SectionGridFilterCard">
-            <Heading2 heading="Property in Tokyo" subHeading={
+            <Heading2 heading="Properties" subHeading={
                 <span className="block text-neutral-500 dark:text-neutral-400 mt-3">
-                    233 Property<span className="mx-2">·</span>Aug 12 - 18
+                   Browse properties to invest in.
                 </span>
             }/>
 
@@ -35,7 +35,7 @@ const PropertiesSection: FC<SectionGridFilterCardProps> = ({
             </div>
             <div className="flex mt-16 justify-center items-center">
                 <div className="flex mt-16 justify-center items-center">
-                    <ButtonPrimary loading>Show me more</ButtonPrimary>
+                    <ButtonPrimary>More Coming Soon</ButtonPrimary>
                 </div>
             </div>
         </div>

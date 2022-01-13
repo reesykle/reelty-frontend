@@ -12,55 +12,55 @@ import PropertiesSection from "../components/Section/Properties/PropertiesSectio
 const DEMO_CATS: TaxonomyType[] = [
     {
         id: "1",
-        href: "/listing-stay",
-        name: "New Yourk",
+        href: "/property",
+        name: "New York",
         taxonomy: "category",
-        count: 188288,
+        count: 0,
         thumbnail:
             "https://images.pexels.com/photos/64271/queen-of-liberty-statue-of-liberty-new-york-liberty-statue-64271.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     },
     {
         id: "2",
-        href: "/listing-stay",
+        href: "/property",
         name: "Singapore",
         taxonomy: "category",
-        count: 188288,
+        count: 0,
         thumbnail:
             "https://images.pexels.com/photos/7740160/pexels-photo-7740160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     },
     {
         id: "2",
-        href: "/listing-stay",
+        href: "/property",
         name: "Paris",
         taxonomy: "category",
-        count: 188288,
+        count: 0,
         thumbnail:
             "https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     },
     {
         id: "2",
-        href: "/listing-stay",
+        href: "/property",
         name: "London",
         taxonomy: "category",
-        count: 188288,
+        count: 0,
         thumbnail:
             "https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     },
     {
         id: "2",
-        href: "/listing-stay",
+        href: "/property",
         name: "Tokyo",
         taxonomy: "category",
-        count: 188288,
+        count: 0,
         thumbnail:
             "https://images.pexels.com/photos/4151484/pexels-photo-4151484.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
     },
     {
         id: "2",
-        href: "/listing-stay",
+        href: "/property",
         name: "Maldives",
         taxonomy: "category",
-        count: 188288,
+        count: 0,
         thumbnail:
             "https://images.pexels.com/photos/3250613/pexels-photo-3250613.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
     },
@@ -68,7 +68,7 @@ const DEMO_CATS: TaxonomyType[] = [
 const DEMO_CATS_2: TaxonomyType[] = [
     {
         id: "1",
-        href: "/listing-stay",
+        href: "/property",
         name: "Enjoy the great cold",
         taxonomy: "category",
         count: 188288,
@@ -77,7 +77,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
     },
     {
         id: "222",
-        href: "/listing-stay",
+        href: "/property",
         name: "Sleep in a floating way",
         taxonomy: "category",
         count: 188288,
@@ -86,7 +86,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
     },
     {
         id: "3",
-        href: "/listing-stay",
+        href: "/property",
         name: "In the billionaire's house",
         taxonomy: "category",
         count: 188288,
@@ -95,7 +95,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
     },
     {
         id: "4",
-        href: "/listing-stay",
+        href: "/property",
         name: "Cool in the deep forest",
         taxonomy: "category",
         count: 188288,
@@ -104,7 +104,7 @@ const DEMO_CATS_2: TaxonomyType[] = [
     },
     {
         id: "5",
-        href: "/listing-stay",
+        href: "/property",
         name: "In the billionaire's house",
         taxonomy: "category",
         count: 188288,

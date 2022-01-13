@@ -1,10 +1,8 @@
 import React, { FC } from "react";
 import GallerySlider from "../Slider/GallerySlider";
 import { DEMO_STAY_LISTINGS } from "../../data/listings";
-import StartRating from "../StartRating/StartRating";
 import { Link } from "gatsby";
 import BtnLikeIcon from "../BtnLikeIcon/BtnLikeIcon";
-import SaleOffBadge from "../SaleOffBadge/SaleOffBadge";
 import Badge from "../../shared/Badge/Badge";
 import { StayDataType } from "../../data/types";
 
@@ -24,11 +22,8 @@ const PropertyCardH: FC<PropertyCardHProps> = ({
     title,
     href,
     like,
-    saleOff,
     isAds,
     price,
-    reviewStart,
-    reviewCount,
     id,
   } = data;
 
@@ -41,10 +36,6 @@ const PropertyCardH: FC<PropertyCardHProps> = ({
           className="w-full h-full rounded-2xl overflow-hidden"
           uniqueID={`PropertyCardH-${Date.now()}-${id}`}
         />
-
-        {saleOff && (
-          <SaleOffBadge className="absolute left-5 top-5 !bg-orange-500" />
-        )}
       </div>
     );
   };
@@ -89,7 +80,6 @@ const PropertyCardH: FC<PropertyCardHProps> = ({
       <div className="flex-grow p-3 sm:pr-6 flex flex-col items-start">
         <div className="space-y-4 w-full">
           <div className="flex items-center space-x-2">
-            {isAds && <Badge name="ADS" color="green" />}
             <h2 className="text-lg font-medium capitalize">
               <span className="line-clamp-2">{title}</span>
             </h2>
@@ -97,7 +87,6 @@ const PropertyCardH: FC<PropertyCardHProps> = ({
           {renderTienIch()}
           <div className="w-14 border-b border-neutral-100 dark:border-neutral-800 "></div>
           <div className="flex w-full justify-between items-end">
-            <StartRating reviewCount={reviewCount} point={reviewStart} />
             <span className="flex items-center justify-center px-3 py-2 border border-secondary-500 rounded leading-none text-base font-medium text-secondary-500">
               {`${price},000`}
             </span>

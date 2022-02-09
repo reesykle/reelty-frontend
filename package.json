@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Reelty is Reesykle's decentralized real estate platform.",
+  "homepage": "https://reelty.reesykle.com",
   "author": "Cedric Diop",
   "keywords": [
     "gatsby"

@@ -523,8 +523,8 @@ const Property: FC<ListingStayDetailPageProps> = ({className = "",isPreviewMode,
                     <div className="relative py-16">
                         <BackgroundSection />
                         <NewCategoriesSliderSection
-                            heading="Explore Properties by Type"
-                            subHeading="Explore houses based on 10 types of stays"
+                             heading="Explore Properties by Type"
+                            subHeading="Explore popular properties based on their architecture"
                             categoryCardType="card5"
                             itemPerRow={5}
                             sliderStyle="style2"
